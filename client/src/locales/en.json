@@ -1,0 +1,52 @@
+{
+  "app": {
+    "name": "Hrisa Bourse",
+    "tagline": "Investment & Banking Platform"
+  },
+  "nav": {
+    "home": "Home",
+    "market": "Market",
+    "companies": "Companies",
+    "documents": "Documents",
+    "analysis": "Analysis",
+    "portfolio": "Portfolio"
+  },
+  "market": {
+    "title": "Stock Market",
+    "tunindex": "TUNINDEX",
+    "tunindex20": "TUNINDEX20",
+    "volume": "Volume",
+    "change": "Change",
+    "topGainers": "Top Gainers",
+    "topLosers": "Top Losers",
+    "mostActive": "Most Active"
+  },
+  "companies": {
+    "title": "Listed Companies",
+    "search": "Search for a company...",
+    "sector": "Sector",
+    "price": "Price",
+    "marketCap": "Market Cap"
+  },
+  "documents": {
+    "title": "Financial Documents",
+    "upload": "Upload Document",
+    "analyze": "Analyze",
+    "askQuestion": "Ask a question about this document..."
+  },
+  "analysis": {
+    "title": "Financial Analysis",
+    "ratios": "Financial Ratios",
+    "compare": "Compare Companies",
+    "recommendations": "Recommendations"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "search": "Search"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "app": {
+    "name": "Hrisa Bourse",
+    "tagline": "Plateforme d'Investissement et Bancaire"
+  },
+  "nav": {
+    "home": "Accueil",
+    "market": "Marché",
+    "companies": "Sociétés",
+    "documents": "Documents",
+    "analysis": "Analyse",
+    "portfolio": "Portefeuille"
+  },
+  "market": {
+    "title": "Marché Boursier",
+    "tunindex": "TUNINDEX",
+    "tunindex20": "TUNINDEX20",
+    "volume": "Volume",
+    "change": "Variation",
+    "topGainers": "Plus Fortes Hausses",
+    "topLosers": "Plus Fortes Baisses",
+    "mostActive": "Plus Actifs"
+  },
+  "companies": {
+    "title": "Sociétés Cotées",
+    "search": "Rechercher une société...",
+    "sector": "Secteur",
+    "price": "Cours",
+    "marketCap": "Capitalisation",
+    "allSectors": "Tous les secteurs",
+    "banking": "Banques",
+    "insurance": "Assurances",
+    "industrial": "Industriel",
+    "services": "Services",
+    "realEstate": "Immobilier",
+    "distribution": "Distribution"
+  },
+  "documents": {
+    "title": "Documents Financiers",
+    "upload": "Télécharger un document",
+    "analyze": "Analyser",
+    "financial Statements": "États Financiers",
+    "annualReport": "Rapport Annuel",
+    "quarterlyReport": "Rapport Trimestriel",
+    "askQuestion": "Poser une question sur ce document..."
+  },
+  "analysis": {
+    "title": "Analyse Financière",
+    "ratios": "Ratios Financiers",
+    "compare": "Comparer des Sociétés",
+    "trends": "Tendances",
+    "recommendations": "Recommandations",
+    "roe": "Rendement des Capitaux Propres (ROE)",
+    "roa": "Rendement de l'Actif (ROA)",
+    "currentRatio": "Ratio de Liquidité",
+    "debtToEquity": "Ratio d'Endettement",
+    "profitMargin": "Marge Bénéficiaire"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "download": "Télécharger",
+    "upload": "Télécharger",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "date": "Date",
+    "amount": "Montant",
+    "currency": "Devise"
+  }
+}

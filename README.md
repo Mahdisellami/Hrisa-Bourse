@@ -1,14 +1,23 @@
 # Hrisa Bourse
 
-Investment and Banking Web Application with AI-powered document analysis.
+Investment and Banking Web Application for the Tunisian financial market with AI-powered document analysis.
+
+Specifically designed for **BVMT** (Bourse des Valeurs Mobilières de Tunis) and **CMF** (Conseil du Marché Financier) integration.
 
 ## Features
 
 - **React + TypeScript Frontend**: Modern, type-safe frontend with Vite
 - **Node.js + Express Backend**: RESTful API with TypeScript
-- **PDF Processing**: Upload and parse financial documents
-- **AI Integration**: Ollama integration for document analysis and chat
-- **Cross-platform**: Works on macOS, Linux, and Windows
+- **BVMT Integration**: Real-time market data from Tunisian Stock Exchange
+- **CMF Integration**: Automated financial document fetching from CMF
+- **AI-Powered Analysis**: Ollama integration for document analysis and financial data extraction
+- **Multi-language**: French (primary), Arabic, and English support
+- **Automated Data Pipeline**: Scheduled extraction and processing of financial statements
+- **Financial Ratios**: Automatic calculation of ROE, ROA, profit margins, and more
+- **PDF Processing**: Cross-platform support for Tunisian financial documents
+- **~100 Companies**: Coverage of Tunisian listed companies
+
+For detailed feature documentation, see [FEATURES.md](docs/FEATURES.md)
 
 ## Tech Stack
 
@@ -19,12 +28,16 @@ Investment and Banking Web Application with AI-powered document analysis.
 - TanStack Query for data fetching
 - Zustand for state management
 - react-pdf for PDF viewing
+- i18next for internationalization (French, Arabic, English)
+- Recharts for financial visualizations
 
 ### Backend
 - Node.js with Express
 - TypeScript for type safety
 - pdf-parse for PDF text extraction
-- Ollama for AI capabilities
+- Ollama for AI-powered financial analysis
+- Cheerio for web scraping (BVMT/CMF)
+- node-cron for scheduled tasks
 - Multer for file uploads
 
 ## Prerequisites
@@ -56,8 +69,10 @@ After installing Ollama, pull the required models:
 
 ```bash
 ollama pull llama2
-ollama pull mistral
+ollama pull mistral  # Recommended for financial analysis
 ```
+
+**Note**: Mistral is recommended for better accuracy in financial data extraction from Tunisian documents.
 
 ## Installation
 
@@ -158,15 +173,29 @@ Hrisa-Bourse/
 ### Health Check
 - `GET /api/health` - Check API status
 
+### Market Data (BVMT)
+- `GET /api/market/indices` - Get TUNINDEX and TUNINDEX20 data
+- `GET /api/market/stock/:ticker` - Get stock data by ticker
+- `GET /api/market/companies` - List all Tunisian companies
+
+### CMF Integration
+- `GET /api/cmf/companies` - List companies registered with CMF
+- `GET /api/cmf/companies/:companyName/documents` - Get company's financial documents
+- `POST /api/cmf/download` - Download financial statement PDF
+
 ### Documents
 - `POST /api/documents/upload` - Upload PDF document
 - `POST /api/documents/analyze/:documentId` - Analyze document with AI
 - `GET /api/documents` - List uploaded documents
 
+### Data Pipeline
+- `POST /api/pipeline/run` - Manually trigger data extraction pipeline
+- `GET /api/pipeline/status` - Check pipeline status
+
 ### Ollama
-- `GET /api/ollama/models` - List available models
+- `GET /api/ollama/models` - List available AI models
 - `POST /api/ollama/generate` - Generate AI completion
-- `POST /api/ollama/chat` - Chat with AI
+- `POST /api/ollama/chat` - Chat with AI about financial documents
 
 ## PDF Libraries
 

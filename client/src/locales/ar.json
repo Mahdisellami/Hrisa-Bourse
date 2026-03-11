@@ -1,0 +1,54 @@
+{
+  "app": {
+    "name": "حريصة بورصة",
+    "tagline": "منصة الاستثمار والخدمات المصرفية"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "market": "السوق",
+    "companies": "الشركات",
+    "documents": "الوثائق",
+    "analysis": "التحليل",
+    "portfolio": "المحفظة"
+  },
+  "market": {
+    "title": "سوق البورصة",
+    "tunindex": "تونيندكس",
+    "tunindex20": "تونيندكس 20",
+    "volume": "الحجم",
+    "change": "التغيير",
+    "topGainers": "الأكثر ارتفاعا",
+    "topLosers": "الأكثر انخفاضا",
+    "mostActive": "الأكثر نشاطا"
+  },
+  "companies": {
+    "title": "الشركات المدرجة",
+    "search": "البحث عن شركة...",
+    "sector": "القطاع",
+    "price": "السعر",
+    "marketCap": "القيمة السوقية",
+    "allSectors": "جميع القطاعات"
+  },
+  "documents": {
+    "title": "الوثائق المالية",
+    "upload": "رفع وثيقة",
+    "analyze": "تحليل",
+    "financialStatements": "البيانات المالية",
+    "askQuestion": "اطرح سؤالا عن هذه الوثيقة..."
+  },
+  "analysis": {
+    "title": "التحليل المالي",
+    "ratios": "النسب المالية",
+    "compare": "مقارنة الشركات",
+    "recommendations": "التوصيات"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجاح",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "search": "بحث"
+  }
+}
