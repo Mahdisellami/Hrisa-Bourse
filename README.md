@@ -40,7 +40,29 @@ For detailed feature documentation, see [FEATURES.md](docs/FEATURES.md)
 - node-cron for scheduled tasks
 - Multer for file uploads
 
-## Prerequisites
+## Quick Start with Docker (Recommended)
+
+The fastest way to get started:
+
+```bash
+# Start all services (frontend, backend, database, AI)
+docker compose up -d
+
+# Initialize AI models (first time only)
+./scripts/init-ollama.sh
+
+# Access the application
+# Frontend: http://localhost:3000
+# Backend: http://localhost:5000
+```
+
+See [DOCKER.md](docs/DOCKER.md) for complete Docker documentation.
+
+---
+
+## Manual Installation
+
+### Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -74,7 +96,9 @@ ollama pull mistral  # Recommended for financial analysis
 
 **Note**: Mistral is recommended for better accuracy in financial data extraction from Tunisian documents.
 
-## Installation
+---
+
+## Manual Installation
 
 1. Clone the repository:
 ```bash
