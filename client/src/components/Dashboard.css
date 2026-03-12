@@ -1,0 +1,368 @@
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+/* Header Styles */
+.dashboard-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #3b82f6 100%);
+  color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo-section h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Language Switcher */
+.language-switcher {
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem;
+  border-radius: 6px;
+}
+
+.language-switcher button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.language-switcher button.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.language-switcher button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Last Update */
+.last-update {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+}
+
+.update-label {
+  opacity: 0.8;
+}
+
+.update-time {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Refresh Button */
+.refresh-btn {
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.refresh-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.refresh-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Main Content */
+.dashboard-main {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Market Indices */
+.market-indices {
+  margin-bottom: 3rem;
+}
+
+.market-indices h2 {
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #3b82f6;
+}
+
+.indices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.index-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.index-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6;
+}
+
+.index-name {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.index-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.index-change {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.index-change.positive {
+  color: #10b981;
+}
+
+.index-change.negative {
+  color: #ef4444;
+}
+
+/* Stock Table */
+.stock-table {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table h2 {
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #3b82f6;
+}
+
+.sectors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sector-group {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sector-title {
+  background: linear-gradient(to right, #e0e7ff, #f3f4f6);
+  padding: 0.75rem 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1e40af;
+  font-weight: 600;
+  border-left: 4px solid #3b82f6;
+}
+
+.companies-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.companies-table thead {
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+}
+
+.companies-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.875rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.companies-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.9rem;
+}
+
+.company-row {
+  transition: background 0.2s;
+}
+
+.company-row:hover {
+  background: #eff6ff;
+}
+
+.ticker {
+  font-weight: 700;
+  color: #1e40af;
+  font-family: 'Courier New', monospace;
+}
+
+.name {
+  color: #374151;
+}
+
+.price {
+  font-weight: 600;
+  color: #111827;
+}
+
+.change.positive,
+.change-percent.positive {
+  color: #10b981;
+  font-weight: 600;
+  background: transparent;
+}
+
+.change.negative,
+.change-percent.negative {
+  color: #ef4444;
+  font-weight: 600;
+  background: transparent;
+}
+
+.volume {
+  color: #374151;
+  font-weight: 500;
+}
+
+.high {
+  color: #059669;
+  font-weight: 500;
+}
+
+.low {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* Loading & No Data */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.loading-spinner {
+  font-size: 1.1rem;
+  color: #6b7280;
+  padding: 2rem;
+}
+
+.no-data {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6b7280;
+}
+
+.no-data p {
+  margin: 0.5rem 0;
+}
+
+.no-data .hint {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Footer */
+.dashboard-footer {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+.dashboard-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dashboard-main {
+    padding: 1rem;
+  }
+
+  .indices-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .companies-table {
+    font-size: 0.8rem;
+  }
+
+  .companies-table th,
+  .companies-table td {
+    padding: 0.5rem;
+  }
+}
